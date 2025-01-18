@@ -1,0 +1,40 @@
+Create a pseudocode for the activity 
+where a company decides to give a 7% bonus to employees 
+if their years of service are more than 3 years. 
+The pseudocode will accept user input for salary and years of service 
+and then calculate and print the net bonus amount.
+
+Pseudocode:
+
+BEGIN
+    PROMPT "Enter your salary: "
+    READ salary
+
+    PROMPT "Enter your years of service: "
+    READ years_of_service
+
+    IF years_of_service > 3 THEN
+        SET bonus = salary * 0.07
+    ELSE
+        SET bonus = 0
+
+    PRINT "Your bonus amount is: ", bonus
+END
+
+
+Explanation:
+PROMPT: Ask the user to enter their salary.
+
+READ: Read the user's input and store it in the variable salary.
+
+PROMPT: Ask the user to enter their years of service.
+
+READ: Read the user's input and store it in the variable years_of_service.
+
+IF: Check if years_of_service is greater than 3.
+
+SET bonus: If the condition is true, calculate the bonus as 7% of the salary.
+
+ELSE: If the condition is false, set the bonus to 0.
+
+PRINT: Output the bonus amount.
