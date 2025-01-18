@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Flowchart">
+    <mxGraphModel dx="1244" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="60" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="askAge" value="Ask user for their age" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="150" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="checkInteger" value="Is input an integer?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="250" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="checkAge" value="Age ≥ 19?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="370" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="enroll" value="You can enroll in the course" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="470" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cannotEnroll" value="You cannot enroll in the course" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="570" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="invalidInput" value="Invalid input. Please enter an integer." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="670" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="770" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="startEdge" edge="1" parent="1" source="start" target="askAge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="askAgeEdge" edge="1" parent="1" source="askAge" target="checkInteger">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="integerYesEdge" edge="1" parent="1" source="checkInteger" target="checkAge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="integerNoEdge" edge="1" parent="1" source="checkInteger" target="invalidInput">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="validAgeEdge" edge="1" parent="1" source="checkAge" target="enroll">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="invalidAgeEdge" edge="1" parent="1" source="checkAge" target="cannotEnroll">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="enrollEdge" edge="1" parent="1" source="enroll" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cannotEnrollEdge" edge="1" parent="1" source="cannotEnroll" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="invalidInputEdge" edge="1" parent="1" source="invalidInput" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
